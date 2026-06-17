@@ -3,8 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #333333;
+  display: flex;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+ul li a.active {
+  background-color: #04AA6D;
+}
+        ul {
+  position: sticky;
+  top: 0;
+}
+
+    </style>
 </head>
 <body>
-
+<ul>
+  <li><a href="index.html">Home</a></li>
+  <li><a href="gallery.html">Gallery</a></li>
+  <li><a href="contact.html">Contact</a></li>
+  <li><a href="site1.html">DOC Site</a></li>
+  <li><a class="active" href="site2.html">DOC Site 2</a></li>
+</ul>
 </body>
 </html>
