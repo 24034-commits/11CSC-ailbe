@@ -30,7 +30,15 @@ ul li a.active {
   position: sticky;
   top: 0;
 }
+.parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
 
+.div1 { grid-area: 1 / 2 / 3 / 5; }
     </style>
 </head>
 <body>
@@ -41,5 +49,8 @@ ul li a.active {
   <li><a href="site1.html">DOC Site</a></li>
   <li><a href="site2.html">DOC Site 2</a></li>
 </ul>
+<div class="parent">
+<div class="div1"> </div>
+</div>
 </body>
 </html>
