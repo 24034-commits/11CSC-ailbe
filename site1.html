@@ -30,6 +30,16 @@ ul li a.active {
   position: sticky;
   top: 0;
 }
+                .parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 2 / 3 / 5; }
+.div2 { grid-area: 3 / 2 / 5 / 5; }
 
     </style>
 </head>
@@ -41,5 +51,13 @@ ul li a.active {
   <li><a class="active" href="site1.html">Tāwharanui</a></li>
   <li><a href="site2.html">DOC Site 2</a></li>
 </ul>
+<div class="parent">
+<div class="div1">
+    <h1 class="center-text">Tāwharanui</h1>
+    <p>Tāwharanui is a campground and open sanctuary which is around an 80-minute drive from Auckland. It features a pearly-white sandy beaches, rolling pastures, and restored native coastal forests. It is protected by a predator-proof fence, making it a safe haven for rare wildlife like brown Kiwi, Kākā, and Takahē. The beaches are perfect for swimming, surfing, and rock pooling.</p>
+    <img src="images/tawharanui2.jpg">
+</div>
+</div>
+
 </body>
 </html>
