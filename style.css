@@ -3,3 +3,8 @@ body {font-family: Verdana, sans-serif; margin:0}
 .center-text {
   text-align: center;
 }
+
+a {
+  color: #04AA6D;
+
+}

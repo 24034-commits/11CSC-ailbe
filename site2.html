@@ -14,6 +14,14 @@ ul {
   display: flex;
 }
 
+.center-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  max-width: 100%;
+}
+
 ul li a {
   display: block;
   color: white;
@@ -32,6 +40,18 @@ ul li a.active {
   top: 0;
 }
 
+         .parent {
+display: grid;
+grid-template-columns: repeat(5, 1fr);
+grid-template-rows: repeat(5, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 1 / 2 / 3 / 5; }
+.div2 { grid-area: 3 / 2 / 5 / 5; }
+
+
     </style>
 </head>
 <body>
@@ -42,12 +62,17 @@ ul li a.active {
   <li><a href="site1.html">Tāwharanui</a></li>
   <li><a class="active" href="site2.html">Shakespear Regional Park</a></li>
 </ul>
-<h1 class="center-text">Tāwharanui</h1>
+<div class="parent">
+<div class="div1">
+<h1 class="center-text">Shakespear Regional Park</h1>
     <p>Shakespear Regional Park is a regional park and scenic open sanctuary and working farm located at the tip of the Whangaparāoa Peninsula, about a 40-minute drive north of central Auckland.
-    It features pest-free wildlife habitats, popular swimming beaches, and panoramic Hauraki Gulf views.</p>
-    <img class="center-img" src="images/tawharanui2.jpg">
-    <p>The main reason people come to Tāwharanui is to camp there. It is a perfect spot for camping, widely considered one of the best spots for camping near Auckland. Gates are open from 6:00 AM to 7:00 AM (and are extended to 9:00 PM during daylight saving hours).
-        Camping is limited to tents. It has 4.9 stars on Google Maps with 2,555 reviews at the time of writing.
+    It features pest-free wildlife habitats, popular swimming beaches, and panoramic Hauraki Gulf views. There is a 1.7km predator-proof fence across the peninsula, protecting the rare wildlife that inhabit it, such as the little spotted kiwi, rare invertebrates (such as the Pūriri moth), and 7 species of native lizards.</p>
+    <img class="center-img" src="images/shakespear1.jpg">
+    <p>The main reason people come to Shakespear is to camp (at the beachside campsite Te Haruhi Bay Campground), hike, and swim there. It is a perfect spot for scenic views and swimming. Gates are open from 6:00 AM to 7:00 AM (and are extended to 9:00 PM during daylight saving hours).
+        Camping is limited to tents and there is a specific zone for self-contained vehicles. It has 4.8 stars on Google Maps with 4,338 reviews at the time of writing.
     </p>
+    <iframe class="center-img" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3202.705492079015!2d174.8241986!3d-36.6094015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6d0d2ee6700e29bd%3A0xf00ef62249c9b10!2sShakespear%20Regional%20Park!5e0!3m2!1sen!2snz!4v1785295157273!5m2!1sen!2snz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+</div>
+</div>
 </body>
 </html>

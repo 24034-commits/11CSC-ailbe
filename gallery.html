@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Gallery</title>
+    <link rel="stylesheet" href="style.css">
     <style>
 ul {
   list-style-type: none;
@@ -40,7 +41,7 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 500px;
+  max-width: 900px;
   position: relative;
   margin: auto;
 }
@@ -107,7 +108,12 @@ img {vertical-align: middle;}
 .active, .dot:hover {
   background-color: #717171;
 }
+.spacer {
+    display: flex;
+    gap: 20px;
 
+
+}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
@@ -115,8 +121,9 @@ img {vertical-align: middle;}
 }
 </style>
 </head>
-
 <body>
+
+<div class="spacer"></div>
 <ul>
   <li><a href="index.html">Home</a></li>
   <li><a class="active" href="gallery.html">Gallery</a></li>
@@ -124,6 +131,8 @@ img {vertical-align: middle;}
   <li><a href="site1.html">Tāwharanui</a></li>
   <li><a href="site2.html">Shakespear Regional Park</a></li>
 </ul>
+
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
